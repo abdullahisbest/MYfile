@@ -1,0 +1,351 @@
+/* Custom styles for the top navigation bar */
+.top-nav {
+    background-color: #fd7820;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #2a0c96; /* Change to your desired link hover color */
+    transform: scale(1.5);
+}
+
+.top-right {
+    margin-right: 20px; /* Adjust the spacing between social icons and contact info */
+}
+
+.contact-info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.contact-info i {
+    margin-right: 5px;
+}
+
+
+.hero-content {
+    text-align: left;
+}
+
+.hero-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    background-color: #fff;
+    color: #009688; /* Green button text color */
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #009688; /* Green button background color on hover */
+    color: #fff; /* Text color on hover */
+}
+/* Custom styles for the top navigation bar */
+.top-nav {
+    padding: 10px 0;
+}
+
+.social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #55acee; /* Change to your desired link hover color */
+}
+
+.contact-info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.contact-info i {
+    margin-right: 5px;
+}
+
+/* Custom styles for the bottom navigation bar */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.navbar-brand {
+    color: #009688; /* Green color for the logo */
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #009688; /* Green color on hover */
+}
+/* Custom styles for the hero section */
+.hero {
+    color: #fff;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero::before {
+    content: "\f108"; /* Unicode character for a graduation cap (Font Awesome) */
+    font-family: "Font Awesome 5 Free";
+    font-size: 200px;
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: -20px;
+    left: -40px;
+    animation: float 3s ease infinite;
+}
+
+.hero::after {
+    content: "\f19d"; /* Unicode character for a book (Font Awesome) */
+    font-family: "Font Awesome 5 Free";
+    font-size: 200px;
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    bottom: -20px;
+    right: -40px;
+    animation: float 3s ease infinite;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.hero-content {
+    text-align: left;
+}
+
+.hero-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    background-color: #fff;
+    color: #009688;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #009688;
+    color: #fff;
+}
+/* Custom styles for the top navigation bar */
+.top-nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Add animations to the top navigation bar */
+.top-nav::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #55acee; /* Animation color */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.top-nav::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #55acee; /* Animation color */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hide phone number and email in mobile mode */
+@media (max-width: 768px) {
+    .top-nav .contact-info {
+        display: none;
+    }
+}
+
+/* Style the social media icons */
+.social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #55acee; /* Change to your desired link hover color */
+}
+
+/* Add hover animations to the top navigation bar */
+.top-nav:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.top-nav:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+/* Custom styles for the top navigation bar */
+.top-nav {
+    color: #fff;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Added relative positioning for centering */
+}
+
+
+
+/* Hide phone number and email in mobile mode */
+@media (max-width: 768px) {
+    .top-nav .contact-info {
+        display: none;
+    }
+    
+    /* Center the social media icons in mobile mode */
+    .top-nav .social-icons {
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 50%; /* Vertically center */
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    .top-nav .social-icons li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+}
+
+/* Style the social media icons */
+.social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #55acee; /* Change to your desired link hover color */
+}
+
+/* Add hover animations to the top navigation bar */
+

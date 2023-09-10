@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<style type="text/css">
+	
+
+
+	.about-us-section {
+		background-color: #f9f9f9;
+		padding: 80px 0px;
+		text-align: center;
+	}
+	.section-title{
+		font-size: 48px;
+		margin-bottom: 30px;
+		position: relative;
+	}
+	.section-title::before{
+		content: "";
+		position: absolute;
+		bottom: -10px;
+		left: 50%;
+		width: 50px;
+		height: 3px;
+		background-color: #009688;
+		transform: translateX(-50%);
+	}
+	.section-description{
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+	.icon-box{
+		margin-bottom: 60px;
+		position: relative;
+		transition: transform 0.3s ease-in-out;
+	}
+
+	.icon-box i{
+		font-size: 64px;
+		color: #009688;
+		margin-bottom: 20px;
+	}
+
+	.icon-title  {
+		font-size: 32px;
+		margin-bottom: 20px;
+		position: relative;
+	}
+	.icon-title::before{
+			content: "";
+		position: absolute;
+		bottom: -10px;
+		left: 50%;
+		width: 50px;
+		height: 3px;
+		background-color: #009688;
+		transform: translateX(-50%);
+	}
+	.icon-description{
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	.icon-box:hover{
+		transform: scale(1.05);
+		transition: transform 0.3s ease-in-out;
+	}
+
+	@media (max-width: 768px) {
+		.about-us-section{
+			padding: 40px 0;
+		}
+		.top-nav{
+		 background-color: #fd7820;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+height: 60px;
+		}
+	}
+	.top-nav {
+    background-color: #fd7820;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #67ff02; /* Change to your desired link hover color */
+    transform: scale(1.5);
+}
+
+
+.top-right {
+    margin-right: 20px; /* Adjust the spacing between social icons and contact info */
+}
+
+.contact-info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.contact-info i {
+    margin-right: 5px;
+}
+/* Custom styles for the top navigation bar */
+.top-nav {
+    color: #fff;
+    padding: 10px 0 ;
+}
+
+/* Custom styles for the bottom navigation bar */
+.navbar {
+    background-color: #ffffff !important; /* Change to your desired background color */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Update logo and link colors for better visibility */
+.navbar-brand {
+    color: #fff; /* Change to your desired text color */
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff ; /* Change to your desired text color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e58686 ; /* Text color on hover */
+}
+/* Custom styles for the top navigation bar */
+.top-nav {
+    padding: 10px 0;
+}
+
+.social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #55acee; /* Change to your desired link hover color */
+}
+
+/* Custom styles for the bottom navigation bar */
+/* ... (Keep the existing styles for the bottom navigation bar) */
+/* Custom styles for the bottom navigation bar */
+.navbar {
+    background-color: #ffffff !important; /* Change to your desired background color */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: background-color 0.3s ease !important; /* Smooth transition on hover */
+}
+
+/* Change navbar link styles */
+.navbar-nav .nav-link {
+    color: #333 !important; /* Change to your desired text color */
+    font-weight: bold !important;
+    transition: color 0.3s ease !important; /* Smooth color transition on hover */
+    position: relative; /* Add relative positioning for ::before and ::after pseudo-elements */
+}
+
+/* Add animations to navbar links */
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #009688; /* Green color */
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background-color: #009688; /* Green color */
+    transition: width 0.3s ease-in-out;
+}
+
+/* Animate the ::before and ::after pseudo-elements on hover */
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link:hover::after {
+    width: 50%; /* Adjust the underline width on hover */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #009688 !important; /* Text color on hover */
+}
+
+.parallax-section{
+	background-image: url('pexels-pixabay-269077.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-color: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	text-align: center;
+	color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-shadow: 2px 2px white;
+}
+
+.parallax-content{
+	text-align: center;
+	animation: fade-in 1s ease-in-out;
+}
+
+/* Principal and Teachers section styles */
+.principal-teachers-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 50px;
+    height: 3px;
+    background-color: #009688;
+    transform: translateX(-50%);
+}
+
+/* Principal Card */
+.principal-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.principal-image img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.principal-name {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.principal-description {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/* Teacher Cards */
+.teacher-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.teacher-card {
+    width: calc(50% - 15px);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.teacher-image img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.teacher-name {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.teacher-description {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+/* Social Icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #009688;
+    font-size: 24px;
+}
+
+/* Hover effect for social icons */
+.social-icons a:hover {
+    color: #007b66;
+}
+/* CSS for expanding/collapsing teacher descriptions */
+.teacher-description {
+    
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.teacher-description.expanded {
+   max-height: 200px;  /* Adjust the desired height */
+}
+
+/* CSS for animations when teacher cards come into view */
+.teacher-card {
+    opacity: 1;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.teacher-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Testimonials section styles */
+.testimonials-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 50px;
+    height: 3px;
+    background-color: #009688;
+    transform: translateX(-50%);
+}
+
+.testimonials-carousel {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
+}
+
+.testimonial-card {
+    min-width: 300px;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.testimonial-author {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Remove scrollbar in Chrome, Safari, and newer Edge */
+.testimonials-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Testimonials section styles */
+.testimonials-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 50px;
+    height: 3px;
+    background-color: #009688;
+    transform: translateX(-50%);
+}
+
+.testimonials-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-card {
+    width: calc(33.33% - 20px);
+    cursor: pointer;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial-content::before,
+.testimonial-content::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #009688;
+    border-radius: 50%;
+    opacity: 0.5;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.testimonial-content::before {
+    left: 10px;
+    top: 10px;
+}
+
+.testimonial-content::after {
+    right: 10px;
+    bottom: 10px;
+}
+
+.testimonial-card:hover .testimonial-content::before,
+.testimonial-card:hover .testimonial-content::after {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.8;
+}
+
+.testimonial-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.testimonial-author {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* Principal and Teachers section styles */
+.principal-teachers-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 50px;
+    height: 3px;
+    background-color: #009688;
+    transform: translateX(-50%);
+}
+
+/* Principal Card */
+.principal-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.principal-image img {
+    max-width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.principal-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 150, 136, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.principal-card:hover .principal-image img {
+    transform: scale(1.1);
+}
+
+.principal-card:hover .principal-image::before {
+    opacity: 1;
+}
+
+.principal-name {
+    font-size: 24px;
+    margin-top: 15px;
+    color: #333;
+}
+
+.principal-description {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #666;
+}
+
+/* Teacher Cards */
+.teacher-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.teacher-card {
+    width: calc(50% - 15px);
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+border-radius: 30px;
+cursor: pointer;
+}
+
+.teacher-image img {
+    max-width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.teacher-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 150, 136, 0.7);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.teacher-card:hover .teacher-image img {
+    transform: scale(1.1);
+}
+
+.teacher-card:hover .teacher-image::before {
+    opacity: 1;
+}
+
+.teacher-name {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #333;
+}
+
+.teacher-description {
+    font-size: 16px;
+    margin-top: 15px;
+    color: #666;
+}
+
+/* Social Icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #009688;
+    font-size: 24px;
+}
+
+/* Hover effect for social icons */
+.social-icons a:hover {
+    color: #007b66;
+}
+
+/* Principal and Teachers section styles */
+.principal-teachers-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 50px;
+    height: 3px;
+    background-color: #009688;
+    transform: translateX(-50%);
+}
+
+.team-member {
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.member-photo img {
+    max-width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.member-photo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 150, 136, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.team-member:hover .member-photo img {
+    transform: scale(1.1);
+}
+
+.team-member:hover .member-photo::before {
+    opacity: 1;
+}
+
+.member-name {
+    font-size: 24px;
+    margin-top: 15px;
+    color: #333;
+}
+
+.member-title {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #666;
+}
+
+.member-description {
+    font-size: 16px;
+    margin-top: 15px;
+    color: #444;
+}
+
+/* Social Icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #009688;
+    font-size: 24px;
+}
+
+/* Hover effect for social icons */
+.social-icons a:hover {
+    color: #007b66;
+}
+
+/* Timeline section styles */
+.timeline-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Timeline styles */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+
+.timeline-event {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-badge {
+    width: 40px;
+    height: 40px;
+    background-color: #009688;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline-badge i {
+    font-size: 24px;
+    color: #fff;
+}
+
+.timeline-badge::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #009688;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.timeline-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-event:hover .timeline-content {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.event-year {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.event-description {
+    font-size: 18px;
+    color: #444;
+    margin-top: 5px;
+}
+
+/* Animation for timeline events */
+.timeline-event::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #009688;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease;
+}
+
+.timeline-event:hover .timeline-badge::before,
+.timeline-event:focus .timeline-badge::before {
+    background-color: #007b66;
+}
+
+
+</style>
+<body>
+	 <header>
+        <!-- Top Navigation Bar -->
+       <!-- Top Navigation Bar with Font Awesome Icons and Social Media Links -->
+<div class="top-nav bg-dark text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <ul class="list-inline social-icons mb-0">
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-snapchat"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-right">
+                <ul class="list-inline contact-info mb-0">
+                    <li class="list-inline-item"><i class="fas fa-envelope"></i> example@email.com</li>
+                    <li class="list-inline-item"><i class="fas fa-phone"></i> +1234567890</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        <!-- Bottom Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">School Logo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#admissions">Admissions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#facilities">Facilities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+
+<section class=".about-us-section" style="margin-top: 50px !important;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h2 class="section-title">About Us</h2>
+				<p class="section-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit ex vel feugiat."</p>
+				<p class="section-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit ex vel feugiat."</p>
+				<p class="section-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit ex vel feugiat."</p>
+			</div>
+			<div class="col-md-6" style=" cursor: pointer;">
+				<div class="icon-box" >
+					<i class="fas fa-graduation-cap"></i>
+					<h3 class="icon-title">Misson</h3>
+					<p class="icon-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit ex vel feugiat."</p>
+				</div>
+<div class="icon-box">
+					<i class="fas fa-users"></i>
+					<h3 class="icon-title">Our Team</h3>
+					<p class="icon-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit ex vel feugiat."</p>
+				</div>
+				<div class="icon-box">
+					<i class="fas fa-heart"></i>
+					<h3 class="icon-title">Values</h3>
+					<p class="icon-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit ex vel feugiat."</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="parallax-section">
+  <div class="parallax-content">
+	<h1>Welcome to APS Boys SRR GBHS Lahore</h1>
+	<p>Discover our journey of excellence.</p>
+  </div>
+</section>
+
+<section class="principal-teachers-section">
+    <div class="container">
+        <h2 class="section-title">Meet Our Team</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="principal-image.jpg" alt="Principal Image">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">John Doe</h3>
+                        <p class="member-title">Principal</p>
+                        <p class="member-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit ex vel feugiat.</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="teacher-image1.jpg" alt="Teacher Image">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Barik</h3>
+                        <p class="member-title">Teacher</p>
+                        <p class="member-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit ex vel feugiat.</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="teacher-image2.jpg" alt="Teacher Image">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Tarik</h3>
+                        <p class="member-title">Teacher</p>
+                        <p class="member-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit ex vel feugiat.</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="teacher-image3.jpg" alt="Teacher Image">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Choto</h3>
+                        <p class="member-title">Teacher</p>
+                        <p class="member-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit ex vel feugiat.</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="timeline-section">
+    <div class="container">
+        <h2 class="section-title">School Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-event">
+                <div class="timeline-badge">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="event-year">2000</h3>
+                    <p class="event-description">School Foundation</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-badge">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="event-year">2005</h3>
+                    <p class="event-description">New Campus Building</p>
+                </div>
+            </div>
+            <!-- Add more timeline events here with Font Awesome icons -->
+        </div>
+    </div>
+</section>
+
+
+
+<section class="testimonials-section">
+    <div class="container">
+        <h2 class="section-title">What Our Students and Parents Say</h2>
+        <div class="testimonials-carousel">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit ex vel feugiat."</p>
+                    <p class="testimonial-author">- John Smith</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit ex vel feugiat."</p>
+                    <p class="testimonial-author">- Mary Johnson</p>
+                </div>
+            </div>
+            <!-- Add more testimonial cards here -->
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit ex vel feugiat."</p>
+                    <p class="testimonial-author">- Tarik</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit ex vel feugiat."</p>
+                    <p class="testimonial-author">- Abdullah Ishaq</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit ex vel feugiat."</p>
+                    <p class="testimonial-author">- Mr barik</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit ex vel feugiat."</p>
+                    <p class="testimonial-author">- Choto</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	window.addEventListener('scroll',fucntion(){
+           var scrolled = window.scrollY;
+           var parallax = document.querySelector(".parallax-section");
+           parallax.style.transform = 'translateY(' + (scrolled * 0.5) + 'px)';
+    	});
+
+    	var timelineData = [
+    	{year: 1960, event: 'School Foundation',description: 'lorem sidofjiosdhfsahdfihsdfois'},
+    	{year: 2000, event: 'Expansion of facilities ',description: 'lorem sidofjiosdhfsahdfihsdfois'},
+    	{year: 2023, event: 'Achievement Award',description: 'lorem sidofjiosdhfsahdfihsdfois'},
+    	];
+
+    	fucntion createTimelineItems() {
+    		var timeline = document.querySelector('.timeline');
+    		timelineData.foreach(fucntion (item) {
+    			var li = document.createElement('li');
+    			li.innerHTML =`<div class="timeline-year" >${item.year}</div>}
+    			<div class="time-line-content">
+                   <h3>${item.event}</h3>
+                   <p>${item.description}</p>
+    			</div>
+    			`;
+    			
+              timeline.appendChild(li);
+    		});
+    	}
+
+    	createTimelineItems();
+
+    	// Smoothly expand and collapse teacher descriptions
+document.querySelectorAll('.teacher-card').forEach(function (teacherCard) {
+    const description = teacherCard.querySelector('.teacher-description');
+    const toggleButton = teacherCard.querySelector('.description-toggle');
+
+    toggleButton.addEventListener('click', function () {
+        description.classList.toggle('expanded');
+    });
+});
+
+// Add animations for the teacher cards when they come into view
+document.querySelectorAll('.teacher-card').forEach(function (teacherCard) {
+    const observer = new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting) {
+            teacherCard.classList.add('animate');
+            observer.unobserve(teacherCard);
+        }
+    }, { threshold: 0.2 });
+
+    observer.observe(teacherCard);
+});
+
+
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

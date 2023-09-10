@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<style>
+    /* Advanced Styling */
+    .top-nav {
+    background-color: #fd7820;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #67ff02; /* Change to your desired link hover color */
+    transform: scale(1.5);
+}
+
+
+.top-right {
+    margin-right: 20px; /* Adjust the spacing between social icons and contact info */
+}
+
+.contact-info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.contact-info i {
+    margin-right: 5px;
+}
+/* Custom styles for the top navigation bar */
+.top-nav {
+    background-color: #009688 !important; /* Change to your desired background color */
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Custom styles for the bottom navigation bar */
+.navbar {
+    background-color: #ffffff !important; /* Change to your desired background color */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Update logo and link colors for better visibility */
+.navbar-brand {
+    color: #fff; /* Change to your desired text color */
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff ; /* Change to your desired text color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e58686 ; /* Text color on hover */
+}
+/* Custom styles for the top navigation bar */
+.top-nav {
+    padding: 10px 0;
+}
+
+.social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #55acee; /* Change to your desired link hover color */
+}
+
+/* Custom styles for the bottom navigation bar */
+/* ... (Keep the existing styles for the bottom navigation bar) */
+/* Custom styles for the bottom navigation bar */
+.navbar {
+    background-color: #ffffff !important; /* Change to your desired background color */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: background-color 0.3s ease !important; /* Smooth transition on hover */
+}
+
+/* Change navbar link styles */
+.navbar-nav .nav-link {
+    color: #333 !important; /* Change to your desired text color */
+    font-weight: bold !important;
+    transition: color 0.3s ease !important; /* Smooth color transition on hover */
+    position: relative; /* Add relative positioning for ::before and ::after pseudo-elements */
+}
+
+/* Add animations to navbar links */
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #009688; /* Green color */
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background-color: #009688; /* Green color */
+    transition: width 0.3s ease-in-out;
+}
+
+/* Animate the ::before and ::after pseudo-elements on hover */
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link:hover::after {
+    width: 50%; /* Adjust the underline width on hover */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #009688 !important; /* Text color on hover */
+}
+/* Custom styles for the hero section */
+.hero {
+    color: #fff;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero::before {
+    content: "\f108"; /* Unicode character for a graduation cap (Font Awesome) */
+    font-family: "Font Awesome 5 Free";
+    font-size: 200px;
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: -20px;
+    left: -40px;
+    animation: float 3s ease infinite;
+}
+
+.hero::after {
+    content: "\f19d"; /* Unicode character for a book (Font Awesome) */
+    font-family: "Font Awesome 5 Free";
+    font-size: 200px;
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    bottom: -20px;
+    right: -40px;
+    animation: float 3s ease infinite;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.hero-content {
+    text-align: left;
+}
+
+.hero-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    background-color: #fff;
+    color: #009688;
+    border: 2px solid black;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #009688;
+    color: #fff;
+    border: 2px solid white;
+}
+/* Custom styles for the top navigation bar */
+.top-nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Add animations to the top navigation bar */
+.top-nav::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #55acee; /* Animation color */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.top-nav::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #55acee; /* Animation color */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hide phone number and email in mobile mode */
+@media (max-width: 768px) {
+    .top-nav .contact-info {
+        display: none;
+    }
+}
+
+/* Style the social media icons */
+.social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #55acee; /* Change to your desired link hover color */
+}
+
+/* Add hover animations to the top navigation bar */
+.top-nav:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.top-nav:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+/* Custom styles for the top navigation bar */
+.top-nav {
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Added relative positioning for centering */
+}
+
+/* Add animations to the top navigation bar */
+
+
+/* Hide phone number and email in mobile mode */
+@media (max-width: 768px) {
+    .top-nav .contact-info {
+        display: none;
+    }
+    
+    .top-nav{
+        padding: 30px !important;
+    }
+    /* Center the social media icons in mobile mode */
+    .top-nav .social-icons {
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 50%; /* Vertically center */
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    .top-nav .social-icons li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+}
+
+/* Style the social media icons */
+.social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #55acee; /* Change to your desired link hover color */
+}
+
+/* Custom styles for the hero image */
+.hero-image {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 400px; /* Set a maximum width if needed */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+/* Remove background color styles */
+.hero::before {
+    content: "";
+    background-image: url("pexels-pixabay-269077.jpg") ; /* Replace with your image path */
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background color (higher opacity) */ /* Adjust the background color and opacity */
+    opacity: 0.7; /* Adjust the opacity as needed */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Place the background image behind other content */
+}
+.hero {
+    /* Remove the background color */
+    color: #000000;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden; /* Ensure content within the hero is contained */
+}
+/* Custom styles for the featured news section */
+.featured-news {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.news-item {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-icon {
+    font-size: 40px;
+    color: #009688;
+}
+
+.news-title {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.news-description {
+    font-size: 16px;
+}
+
+/* Hover animation for news items */
+.news-item:hover {
+    transform: translateY(-5px);
+}
+/* Custom styles for the school introduction section */
+.school-introduction {
+    background-image: url("pexels-pixabay-269077.jpg"); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.intro-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.intro-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.intro-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.intro-button:hover {
+    background-color: #009688; /* Change to your desired hover color */
+    color: #fff;
+}
+
+.intro-video {
+    margin-top: 20px;
+}
+
+.intro-stat {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.stat-number {
+    font-size: 36px;
+    color: #009688;
+}
+
+.stat-label {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Add hover animation to statistics */
+.intro-stat:hover {
+    transform: scale(1.05);
+}
+.col-md-4{
+    cursor: pointer;
+}
+/* Custom styles for the school introduction section */
+.school-introduction {
+    background-image: url("pexels-pixabay-269077.jpg"); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.intro-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.intro-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.intro-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.intro-button:hover {
+    background-color: #009688; /* Change to your desired hover color */
+    color: #fff;
+}
+
+.intro-video {
+    margin-top: 20px;
+}
+
+.intro-stat {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.stat-number {
+    font-size: 36px;
+    color: #009688;
+}
+
+.stat-label {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Add hover animation to statistics */
+.intro-stat:hover {
+    transform: scale(1.05);
+}
+
+.hero-btn1 {
+    background-color: #009688;
+    color: #fff;
+    border: 2px solid white;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-btn1:hover {
+    background-color: #fff;
+    color: #009688;
+    border: 2px solid black;
+}
+.site-footer{
+    background-color: #009688;
+    color: #fff;
+    padding: 30px 5px;
+    text-align: center;
+}
+.footer-logo img{
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-text{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.footer-links ul{
+list-style: none;
+padding: 0;
+}
+
+.footer-links ul li{
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+.footer-links ul li:last-child {
+    margin-right: 2px;
+}
+.footer-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+}
+.footer-links ul li a::before,
+.footer-links ul li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: transform 0.3s ease;
+}
+
+.footer-links ul li a::before{
+    top: 0;
+    left: 0;
+    transform-origin: 0 0;
+}
+
+.footer-links ul li a::after{
+    bottom: 0;
+    right: 0;
+    transform-origin: 100% 100%;
+}
+.footer-links ul li a:hover::before{
+    transform: scaleX(1.0);
+}
+.footer-links ul li a:hover::after{
+    transform: scaleX(1.0);
+}
+/* Page Background */
+body {
+    background-image: linear-gradient(to bottom, #000428, #004e92);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: #007BFF;
+}
+
+h1.display-4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Section Styling */
+section {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+ul, ol {
+    margin-left: 20px;
+    font-size: 1.1rem;
+}
+
+/* Icon Styling */
+i {
+    margin-right: 5px;
+    color: #007BFF;
+    font-size: 1.2rem;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+}
+
+/* Hover Effect */
+section:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+/* Effects using ::before and ::after */
+
+/* Section Styling */
+section {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: -1;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #007BFF, transparent);
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+section:hover {
+    transform: translateY(-5px);
+}
+
+section:hover::before {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+section:hover::after {
+    transform: scaleX(1);
+}
+/* Circle Hover Effect with Animations */
+
+/* Section Styling */
+section {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: width 0.3s ease, height 0.3s ease, background 0.3s ease;
+}
+
+section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    opacity: 0;
+    transform: scale(0);
+    border-radius: 10px;
+    z-index: 1;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover Effect */
+section:hover {
+    transform: translateY(-5px);
+}
+
+section:hover::before {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+section:hover::after {
+    opacity: 1;
+    transform: scale(1);
+}
+/* Collapsible Sections */
+.collapsible {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    text-align: left;
+    width: 100%;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    display: none;
+    padding: 10px;
+}
+
+/* Collapsible Animation */
+.collapsible.active {
+    background-color: #0056b3;
+}
+
+.collapsible.active + .content {
+    display: block;
+}
+
+/* Collapsible Sections */
+.collapsible {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    text-align: left;
+    width: 100%;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    display: none;
+    padding: 10px;
+}
+
+/* Collapsible Animation */
+.collapsible.active {
+    background-color: #0056b3;
+}
+
+.collapsible.active + .content {
+    display: block;
+}
+
+
+</style>
+<body>
+    <header>
+        <!-- Top Navigation Bar -->
+       <!-- Top Navigation Bar with Font Awesome Icons and Social Media Links -->
+<div class="top-nav bg-dark text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <ul class="list-inline social-icons mb-0">
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-snapchat"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-right">
+                <ul class="list-inline contact-info mb-0">
+                    <li class="list-inline-item"><i class="fas fa-envelope"></i> example@email.com</li>
+                    <li class="list-inline-item"><i class="fas fa-phone"></i> +1234567890</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        <!-- Bottom Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">School Logo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#admissions">Admissions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#facilities">Facilities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+    <header class="text-center py-5 bg-primary text-white">
+        <h1 class="display-4">Admissions</h1>
+        <p class="lead">Unlock Your Potential with Us</p>
+    </header>
+
+    <div class="container mt-5">
+        <!-- Collapsible Admission Requirements Section -->
+        <section class="admission-info">
+            <h2><i class="fas fa-graduation-cap"></i> Admission Requirements</h2>
+            <ul>
+                <li><i class="fas fa-check"></i> High School Diploma or Equivalent</li>
+                <li><i class="fas fa-check"></i> Recommendation Letters</li>
+                <li><i class="fas fa-check"></i> Entrance Exam Scores</li>
+                <li><i class="fas fa-check"></i> Passion for Learning</li>
+            </ul>
+        </section>
+
+        <section class="application-process">
+            <h2><i class="fas fa-file-alt"></i> Application Process</h2>
+            <ol>
+                <li><i class="fas fa-check"></i> Complete the Online Application</li>
+                <li><i class="fas fa-check"></i> Submit Required Documents</li>
+                <li><i class="fas fa-check"></i> Interview with Admissions Team</li>
+                <li><i class="fas fa-check"></i> Await Admission Decision</li>
+            </ol>
+        </section>
+
+        <section class="important-dates" style="cursor: pointer;">
+            <h2><i class="fas fa-calendar-alt"></i> Important Dates</h2>
+            <ul>
+                <li><i class="fas fa-calendar-day"></i> Application Deadline: January 31, 20XX</li>
+                <li><i class="fas fa-calendar-day"></i> Entrance Exam: February 15, 20XX</li>
+                <li><i class="fas fa-calendar-day"></i> Admissions Decision: March 15, 20XX</li>
+            </ul>
+        </section>
+
+        <section class="contact" style="cursor: pointer;">
+            <h2><i class="fas fa-envelope"></i> Contact Admissions</h2>
+            <p>If you have any questions or need assistance with the admissions process, please contact our admissions team:</p>
+            <p><i class="fas fa-envelope"></i> Email: admissions@example.com</p>
+            <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+        </section>
+    </div>
+
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>&copy; 20XX Your School</p>
+    </footer>
+
+    <script>
+  function toggleCollapsible(sectionId) {
+            var section = document.getElementById(sectionId);
+            var content = section.querySelector('.content');
+            var button = section.querySelector('.collapsible');
+
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                button.textContent = 'Show ' + section.querySelector('h2').textContent;
+            } else {
+                content.style.display = 'block';
+                button.textContent = 'Hide ' + section.querySelector('h2').textContent;
+            }
+        }
+    </script>
+</body>
+</html>
